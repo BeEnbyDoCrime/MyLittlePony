@@ -1,0 +1,50 @@
+div {
+  border: 15px solid chartreuse;
+  width: 125%;
+  height: 800px;
+  vertical-align: middle;
+}
+
+h1{
+  width:100%;
+  background:linear-gradient(90deg, rgba(102, 51, 0, 1) 0%, rgba(148, 97, 0, 1) 25%, rgba(204, 153, 0, 1) 50%);
+  color: transparent;
+  border: 0.1px dotted rgba(255,255,255,0);
+  background-clip: text;
+  font-size: 40px;
+}
+
+p {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center; 
+  width: 50%;
+  color:#8A4B08;
+  font-weight: bold;
+  font-size: larger;
+  margin:30px 0;
+}
+
+a {
+  color:#8A4B08;
+  flex:none;
+}
+
+.banière , .applejackbanière {
+  display:block;
+  margin:auto;
+}
+
+.applejack1, .applejack2, .applejack3, .applejack4, .applejack5, .applejack6, video {
+  height:350px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.return {
+  position:fixed;
+  bottom:0;
+  right:0;
+}
