@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* -------------------
+-------BODY----------
+------------------- */
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -11,6 +15,10 @@ body {
   min-height: 100vh;
   /* border: 15px solid greenyellow; */
 }
+
+/* --------------------
+----------HEADER----------
+-------------------------- */
 
 header {
   display: flex;
@@ -55,6 +63,10 @@ header h1 a:hover {
   color: rosybrown;
 }
 
+/* --------------------
+--------FOOTER---------
+----------------------*/
+
 footer {
   /* border: 15px solid blueviolet; */
   display: flex;
@@ -63,6 +75,10 @@ footer {
   background-color: rgb(74, 71, 71);
   color: antiquewhite;
 }
+
+/* --------------------
+----------MAIN---------
+----------------------- */
 
 main {
   /* border: 15px solid blue; */
@@ -104,10 +120,19 @@ main article {
 
 main article h2 {
   grid-area: title;
-  margin: 50px auto 0px;
+  margin: 10px auto 0px;
   text-transform: uppercase;
-  font-size: 75px;
+  font-size: 50px;
+  padding-bottom: 15px;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black;
 }
+
+
+/*----------------------
+-------BANNER-----------
+------------------------*/
 
 main article .banniere {
   /*banniere*/
@@ -115,6 +140,10 @@ main article .banniere {
   box-shadow: 0 0 5px black;
   margin: 50px auto;
 }
+
+/* -------------------------------
+-----ORIGINE ET CUTIE-------------
+----------------------------------*/
 
 main article .origine {
   grid-area: origin;
@@ -132,45 +161,11 @@ main article .cutieimage {
 
 main article .origineimage:hover,
 main article .cutieimage:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 main article .cutiestory {
   grid-area: cutieStory;
-}
-
-main article .gallery {
-  grid-area: gallery;
-  background-color: rgb(70, 64, 64);
-  padding: 15px 15px;
-}
-
-/* main article .gallery div {
-  display: flex;
-  height: fit-content;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-} */
-
-/* main article .gallery div img {
-  background-size: cover;
-} */
-
-main article .gallery div {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-column-gap: 50px;
-  align-items: center;
-}
-main article .gallery div img {
-  width: 100%;
-  filter: drop-shadow(0 0 5px black);
-}
-
-main article .video {
-  grid-area: video;
-  margin: 50px auto 50px;
 }
 
 main article .origine,
@@ -178,7 +173,7 @@ main article .cutiestory {
   background-color: antiquewhite;
   border: 2px solid black;
   padding: 25px;
-  margin: 15px;
+  margin: 15px 15px 65px;
 }
 
 main article .origine h3,
@@ -192,13 +187,28 @@ main article .origine p,
 main article .cutiestory p {
   margin-bottom: 20px;
   font-size: 20px;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
 }
 
-main article .origine p::first-letter,
-main article .cutiestory p::first-letter {
-  font-size: 40px;
-  color: blueviolet;
+/*------------------------
+--------GALLERY-----------
+--------------------------*/
+
+main article .gallery {
+  grid-area: gallery;
+  background-color: rgb(70, 64, 64);
+  padding: 15px 15px;
+}
+
+main article .gallery div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 50px;
+  align-items: center;
+}
+main article .gallery div img {
+  width: 100%;
+  filter: drop-shadow(0 0 5px black);
 }
 
 main article .gallery h3 {
@@ -207,7 +217,21 @@ main article .gallery h3 {
   text-align: center;
 }
 
-/* main img {
+/*---------------------
+---------VIDEO---------
+-----------------------*/
+
+main article .video {
+  grid-area: video;
+  margin: 50px auto 50px;
+}
+
+/* ---------------------------
+---------CEMETERY-------------
+------------------------------ 
+
+
+main img {
   animation-name: blurg;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -223,4 +247,16 @@ main article .gallery h3 {
   100% {
     filter: drop-shadow(0 0 0px rgb(172, 140, 5p));
   }
+} */
+
+/* main article .gallery div {
+  display: flex;
+  height: fit-content;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
+
+/* main article .gallery div img {
+  background-size: cover;
 } */
